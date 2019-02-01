@@ -1,19 +1,27 @@
-const NProgress = require('nprogress')
+import wrapWithProvider from "./wrap-with-provider"
 
-// exports.onClientEntry = () => {
+import NProgress from 'nprogress'
+
+// export function onClientEntry() {
+//   // init gatsby
+// }
+
+// export function onInitialClientRender() {
 //   // initial load
 // }
 
-exports.onPreRouteUpdate = ({ location }) => {}
+// export function onPreRouteUpdate({ location }) {}
 
-exports.onRouteUpdateDelayed = () => {
+export function onRouteUpdateDelayed() {
   NProgress.start()
 }
 
-exports.onRouteUpdate = ({ location }) => {
+export function onRouteUpdate() {
   NProgress.done()
 
   // Track pageview with google analytics
   // window.ga(`set`, `page`, location.pathname + location.search + location.hash)
   // window.ga(`send`, `pageview`)
 }
+
+export const wrapRootElement = wrapWithProvider
