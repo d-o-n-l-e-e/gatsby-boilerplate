@@ -2,10 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
 
 import Header from './header'
 
-import layoutStyles from '../styles/layout.module.scss'
+import '../styles/base.scss'
+
+const Wrapper = styled.div`
+  padding: 20px;
+`
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,7 +35,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <div className={layoutStyles.wrapper}>{children}</div>
+        <Wrapper>{children}</Wrapper>
       </>
     )}
   />

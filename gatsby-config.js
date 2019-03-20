@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Site Name',
   },
-  pathPrefix: '/gatsby-boilerplate',
+  pathPrefix: '',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -20,9 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        // Setting a color is optional.
         color: `#000`,
-        // Disable the loading spinner.
         showSpinner: false,
       },
     },
@@ -46,12 +44,8 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/images/gatsby-icon.png',
       },
     },
-
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 }

@@ -1,0 +1,25 @@
+// Base Styles
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+a,
+button {
+  cursor: pointer;
+}

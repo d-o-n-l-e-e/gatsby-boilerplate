@@ -1,9 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
 
-import containerStyles from '../styles/container.module.scss'
+const Container = styled.div`
+  max-width: 1400px;
+  margin: 0 auto;
+`
 
-const Container = ({ children }) => (
-  <div className={containerStyles.container}>{children}</div>
+export default ({ children }) => (
+  <Container>{children}</Container>
 )
-
-export default Container
