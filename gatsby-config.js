@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Site Name',
   },
-  pathPrefix: '/gulp-boilerplate',
+  pathPrefix: '/gatsby-boilerplate/',
   plugins: [
     'gatsby-plugin-react-helmet',
     {
