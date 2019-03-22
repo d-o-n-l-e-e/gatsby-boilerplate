@@ -67,7 +67,6 @@ export default class extends React.Component {
               <NavLink>
                 <Link to="/posts">Posts</Link>
               </NavLink>
-
             </NavLinks>
           </Nav>
         </Container>
