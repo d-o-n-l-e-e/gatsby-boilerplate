@@ -52,6 +52,8 @@ module.exports = {
       options: {
         url: `https://api.darksky.net/forecast/e2b5bad35429a23de86372b6aa6ed3a8/40.6971494,-74.2598655`,
         name: `weather`,
+        localSave: true,
+        path: `${__dirname}/src/data/`
       }
     }
 
